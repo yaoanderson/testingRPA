@@ -1,0 +1,2 @@
+# testingRPA
+testingRPA is software testing project which is wrote by Anderson.Yao, one SDET in China. This project is one software testing process automation project which can reduce your duplicate working in creating and updating manual and automation test cases and make it effective and efficient, in order that they can focus on test design and data preparation much more but not writing and update duplicate test cases daily.
