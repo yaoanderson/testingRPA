@@ -1,0 +1,11 @@
+% for values in datas:
+Go to ${page} page, \
+% for i in range(len(values)):
+% if values[i] == 'null':
+and input ${values[i]} in ${factors[i]} field \
+% else:
+and input '${values[i]}' in ${factors[i]} field \
+% endif
+% endfor
+, then click login button.
+% endfor

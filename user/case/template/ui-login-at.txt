@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# coding=utf8
+
+from time import sleep
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+driver = webdriver.Chrome(executable_path="chromedriver")
+driver.get("https://xxx.com")
+
+% for i in range(len(values)):
+% if values[i] == 'null':
+driver.find_element(By.NAME, "${factors[i]}").send_keys("")
+% else:
+driver.find_element(By.NAME, "${factors[i]}").send_keys("${values[i]}")
+% endif
+% endfor
+
+driver.find_element(By.ID, "btn-login").click()
+driver.close()
+sleep(5)
